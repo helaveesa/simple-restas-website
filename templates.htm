@@ -1,0 +1,51 @@
+// -*- mode: closure-template-html; fill-column: 140 -*-
+
+{namespace tpl}
+
+{template root}
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">{\n}
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">{\n}
+
+
+    <head>{\n}
+	  <title>{$headtitle}</title>{\n}
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />{\n}
+	  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />{\n}
+    </head>{\n}
+
+
+    <body id="top">{\n}
+
+      <div class="header">{\n}
+        <p style="font-size:27px;" style="margin-top: 40px">{\n}
+          <br/>
+          <br/>
+          Сайт компании{\n}
+          </p>{\n}
+        </div>{\n}
+
+        <div class="navigation">{\n}
+          <a href="/">Главная</a>{\n}
+          <a href="/history">История</a>{\n}
+          <a href="/staff">Сотрудники</a>{\n}
+          <a href="/foto">Фотографии</a>{\n}
+          <a href="/contacts">Контакты</a>{\n}
+          <div class="clearer"><span></span></div>{\n}
+        </div>{\n}
+
+      </div>{\n}
+
+      <div class="container">{\n}
+        <div class="content">{\n}
+          {$content | noAutoescape}{\n}{\n}
+        </div>{\n}
+
+        <div class="footer">{\n}
+        </div>{\n}
+
+      </div>{\n}
+
+    </body>{\n}
+  </html>{\n}
+{/template}
+
