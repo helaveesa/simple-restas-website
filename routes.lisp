@@ -1,4 +1,4 @@
-(in-package #:srw)
+(in-package #:hn)
 
 
 ;; 404
@@ -33,20 +33,93 @@
        ,@body)))
 
 
-(def/route contacts ("contacts")
-  (old-page "content/contacts.htm"))
-
-(def/route foto ("foto")
-  (old-page "content/foto.htm"))
-
-(def/route history ("history")
-  (old-page "content/history.htm"))
-
 (def/route index ("index")
   (old-page "content/index.htm"))
 
-(def/route staff ("staff")
-  (old-page "content/staff.htm"))
+(def/route about ("about")
+      (old-page "content/about.htm"))
+
+(def/route specialty ("specialty")
+    (old-page "content/specialty.htm"))
+
+(def/route articles ("articles")
+    (old-page "content/articles.htm"))
+
+(def/route lisp ("lisp")
+      (old-page "content/lisp.htm"))
+
+(def/route news ("news")
+      (old-page "content/news.htm"))
+
+(def/route useful-links ("useful_links")
+    (old-page "content/useful_links.htm"))
+
+(def/route comments ("comments")
+    (old-page "content/comments.htm"))
+
+(def/route contacts ("contacts")
+    (old-page "content/contacts.htm"))
+
+(def/route service ("service")
+    (old-page "content/service.htm"))
+
+(def/route works ("works")
+    (old-page "content/works.htm"))
+
+(def/route prices ("prices")
+    (old-page "content/prices.htm"))
+
+(def/route customers ("customers")
+    (old-page "content/customers.htm"))
+
+(def/route facts ("facts")
+    (old-page "content/facts.htm"))
+
+(def/route faq ("faq")
+      (old-page "content/faq.htm"))
+
+(def/route ad ("ad")
+      (old-page "content/ad.htm"))
+
+(def/route ad-history ("ad_history")
+    (old-page "content/ad_history.htm"))
+
+(def/route ad-terminology ("ad_terminology")
+    (old-page "content/ad_terminology.htm"))
+
+(def/route pr ("pr")
+      (old-page "content/pr.htm"))
+
+(def/route event-marketing ("event_marketing")
+    (old-page "content/event_marketing.htm"))
+
+(def/route what-pr ("what_pr")
+    (old-page "content/what_pr.htm"))
+
+(def/route propaganda-pr ("propaganda_pr")
+    (old-page "content/propaganda_pr.htm"))
+
+(def/route topic-1 ("topic_1")
+    (old-page "content/topic_1.htm"))
+
+(def/route topic-2 ("topic_2")
+    (old-page "content/topic_2.htm"))
+
+(def/route ad-outdoor ("ad_outdoor")
+    (old-page "content/ad_outdoor.htm"))
+
+(def/route exhibition ("exhibition")
+    (old-page "content/exhibition.htm"))
+
+(def/route projects ("projects")
+    (old-page "content/projects.htm"))
+
+(def/route e-mail ("e_mail")
+    (old-page "content/e_mail.htm"))
+
+(def/route sitemap ("sitemap")
+    (old-page "content/sitemap.htm"))
+
 
 
 

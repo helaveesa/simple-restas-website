@@ -7,7 +7,7 @@
 (require 'cl-base64)
 
 
-(restas:define-module #:srw
+(restas:define-module #:hn
     (:use #:closer-mop #:cl #:iter #:alexandria #:anaphora #:postmodern)
   (:shadowing-import-from :closer-mop
                           :defclass
@@ -19,9 +19,9 @@
                           :class-name))
 
 
-(in-package #:srw)
+(in-package #:hn)
 
-(let ((path '(:RELATIVE "srw")))
+(let ((path '(:RELATIVE "hn")))
   (setf asdf:*central-registry*
         (remove-duplicates (append asdf:*central-registry*
                                    (list (merge-pathnames
@@ -32,7 +32,7 @@
 
 
 (defparameter *basedir*
-  (asdf:component-pathname (asdf:find-system '#:srw)))
+  (asdf:component-pathname (asdf:find-system '#:hn)))
 
 (defun path (relative)
   (merge-pathnames relative *basedir*))

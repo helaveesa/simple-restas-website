@@ -1,14 +1,18 @@
-(in-package #:srw)
+(in-package #:hn)
 
 (defun menu ()
   (list (list :link "/" :title "Главная")
-        (list :link "/history" :title "История")
-        (list :link "/staff" :title "Сотрудники")
-        (list :link "/foto/" :title "Фотографии")
+        (list :link "/about" :title "Елена-Елецкая")
+        (list :link "/specialty" :title "Специализация")
+        (list :link "/articles" :title "Статьи")
+        (list :link "/lisp" :title "Создание-сайтов")
+        (list :link "/news" :title "Новости")
+        (list :link "/userful_links" :title "Полезные-ссылки")
+        (list :link "/comments" :title "Отзывы-клиентов")
         (list :link "/contacts" :title "Контакты")))
 
 ;; start
-(restas:start '#:srw #|:hostname "rigidus.ru"|# :port 9333)
+(restas:start '#:hn #|:hostname "rigidus.ru"|# :port 2002)
 (restas:debug-mode-on)
 ;; (restas:debug-mode-off)
 (setf hunchentoot:*catch-errors-p* t)

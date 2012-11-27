@@ -1,15 +1,15 @@
-(in-package #:srw)
+(in-package #:hn)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; default-render
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defclass srw-render () ())
+(defclass hn-render () ())
 
-(defparameter *default-render-method* (make-instance 'srw-render))
+(defparameter *default-render-method* (make-instance 'hn-render))
 
 
-;; (defmethod restas:render-object ((designer srw-render) (data list))
+;; (defmethod restas:render-object ((designer hn-render) (data list))
 ;;   (destructuring-bind (headtitle navpoints content) data
 ;;     (tpl:root (list :headtitle headtitle
 ;;                     :content (tpl:base (list :navpoints navpoints
